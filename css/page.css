@@ -18,6 +18,10 @@ body {
   font-family: "Open Sans", "Times New Roman", sans-serif;
 }
 
+.form-page {
+  position: relative;
+}
+
 @media (min-width: 768px) {
   body {
     width: 660px;

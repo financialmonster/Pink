@@ -1,7 +1,5 @@
 .form {
   margin-top: 35px;
-
-  outline: solid green;
 }
 
 .form__person,
@@ -22,7 +20,7 @@
 .form__contacts-label,
 .form__contacts-legend,
 .form__app-legend,
-.form__textarea-label,
+.form__textarea-legend,
 .form__asterisk-item {
   color: #d22856;
 }
@@ -30,12 +28,6 @@
 .form__achievements-legend--mobile,
 .form__app-legend--mobile{
   line-height: 18px;
-}
-
-.form__button {
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
 }
 
 .form__sur-name,
@@ -51,6 +43,31 @@
   padding-left: 20px;
 
   border: 2px solid #e5e5e5;
+}
+
+.form__sur-name:hover,
+.form__first-name:hover,
+.form__third-name:hover,
+.form__tel:hover,
+.form__email:hover,
+.form__textarea-field:hover,
+.form__sur-name:focus,
+.form__first-name:focus,
+.form__third-name:focus,
+.form__tel:focus,
+.form__email:focus,
+.form__textarea-field:focus {
+  border-color: #283645;
+}
+
+.form__sur-name:active,
+.form__first-name:active,
+.form__third-name:active,
+.form__tel:active,
+.form__email:active,
+.form__textarea-field:active {
+  border-color: #d22856;
+  outline: none;
 }
 
 .form__sur-name::placeholder,
@@ -121,7 +138,7 @@
   font-size: 18px;
 }
 
-.form__achievements-label:before {
+.form__achievements-label::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -133,6 +150,15 @@
 
   background-color: white;
   border: 2px solid #e5e5e5;
+}
+
+.form__achievements-label:hover::before,
+.form__achievements-label:focus::before {
+  border-color: #283645;
+}
+
+.form__achievements-label:active::before {
+  border-color: #d22856;
 }
 
 .form__achievements-item {
@@ -212,6 +238,15 @@
   display: none;
 }
 
+.form__app-label:hover::before,
+.form__app-label:focus::before {
+  border-color: #283645;
+}
+
+.form__app-label:active::before {
+  border-color: #d22856;
+}
+
 .form__radio:checked ~ .form__app-label::after {
   display: block;
 }
@@ -261,10 +296,77 @@
 }
 
 .form__textarea {
-  outline: solid;
+  min-height: 240px;
+  margin-top: 30px;
+}
+
+.form__textarea-legend {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.form__button {
+  margin-left: 20px;
+  box-sizing: border-box;
+  width: 280px;
+  margin-top: 40px;
+  background-color: #2aab6d;
+  border-radius: 0px;
+  height: 63px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.form__button:hover,
+.form__button:focus {
+    background-color: #1c9b5e;
+}
+
+.form__button:active{
+    color: #61b98f;
+}
+
+.form__asterisk--desktop {
+  display: none;
+}
+
+.form__asterisk--normal {
+  width: 185px;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 
 @media (min-width: 768px) {
+  .form__button {
+    margin-left: 0px;
+    margin-top: 65px;
+    width: 300px;
+  }
+
+  .form__asterisk--normal {
+    margin-top: 80px;
+    margin-left: 135px;
+  }
+
+  .form__textarea {
+    min-height: 310px;
+    margin-top: 50px;
+    box-sizing: border-box;
+  }
+
+  .form__textarea-legend {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+  }
+
+  .form__textarea-field {
+    width: 500px;
+    min-height: 195px;
+    margin: 0 auto;
+  }
+
   .form__app {
     background-color: transparent;
     min-height: 310px;
@@ -423,6 +525,25 @@
 }
 
 @media (min-width: 1200px) {
+  .form__asterisk--normal {
+    display: none;
+  }
+
+  .form__asterisk--desktop {
+    display: block;
+    margin-left: 320px;
+    margin-top: 80px;
+  }
+
+  .form__textarea {
+    min-height: 235px;
+  }
+
+  .form__textarea-field {
+    width: 820px;
+    min-height: 125px;
+  }
+
   .form__app {
     width: 430px;
     margin-left: 39px;

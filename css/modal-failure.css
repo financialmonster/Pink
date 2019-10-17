@@ -1,0 +1,39 @@
+.modal-failure {
+    position: absolute;
+    width: 320px;
+    min-height: 290px;
+    left: 0px;
+    top: 1160px;
+    background-color: white;
+    padding-top: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 0 grey;
+    z-index: 3;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .modal-failure {
+        width: 460px;
+        min-height: 360px;
+        left: 100px;
+        top: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-failure {
+        width: 780px;
+        min-height: 380px;
+        left: 210px;
+        top: 810px;
+    }
+
+    .modal__failure-wrapper {
+        background-color: #f2f2f2;
+        min-height: 165px;
+        border-top: 1px solid transparent;
+        box-sizing: border-box;
+        margin-top: 70px;
+    }
+}
