@@ -1,0 +1,107 @@
+.reviews {
+  min-height: 315px;
+}
+
+.reviews__list {
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.reviews__item-author--mobile {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reviews__round-toggles {
+  margin-top: 20px;
+  padding-left: 95px;
+}
+
+.reviews__item-author--normal {
+  display: none;
+}
+
+.reviews__item-description {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .reviews__item-author--mobile {
+    display: none;
+  }
+
+  .reviews__item-author--normal {
+    display: block;
+    margin-bottom: -10px;
+    font-weight: bold;
+
+    font-size: 20px;
+  }
+
+  .reviews__item-description {
+    display: block;
+  }
+
+  .reviews__item-content {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+  }
+
+  .reviews__wrapper {
+    width: 624px;
+    margin-left: -2px;
+  }
+
+  .reviews__round-toggles {
+    padding-left: 260px;
+  }
+
+  .reviews {
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    min-height: 290px;
+  }
+
+  .reviews__list {
+    position: relative;
+
+    width: 700px;
+    margin-top: 175px;
+    margin-left: 125px;
+  }
+
+  .reviews__list::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    left: 300px;
+
+    width: 80px;
+    height: 63px;
+
+    background-image: url("../img/quotes.svg.png");
+  }
+
+  .reviews__item-author--normal {
+    font-size: 24px;
+  }
+
+  .reviews__item-description {
+    font-size: 18px;
+  }
+
+  .reviews__round-toggles {
+    display: none;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+}

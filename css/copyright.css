@@ -1,0 +1,306 @@
+.copyright {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .photo-page .copyright {
+    display: block;
+    min-height: 240px;
+    padding-top: 40px;
+  }
+
+  .photo-page .copyright__logo-image--desktop {
+    display: none;
+  }
+
+  .photo-page .copyright__logo {
+    width: 147px;
+    height: 40px;
+    display: block;
+    margin-left: 65px;
+    margin-bottom: 40px;
+  }
+
+  .photo-page .copyright__logo:hover,
+  .photo-page .copyright__logo:focus {
+    background-image: url("../img/logotabletred.png");
+    background-repeat: no-repeat;
+    background-position: 1px 0;
+  }
+
+  .photo-page .copyright__logo:active {
+    background-image: url("../img/bottomlogotablet.png");
+    background-repeat: no-repeat;
+    background-position: 1px 0;
+  }
+
+  /*photo-page .copyright__logo:hover > .photo-page .copyright__logo-image--tablet,
+  .photo-page .copyright__logo:focus > .photo-page .copyright__logo-image--tablet,
+  .photo-page .copyright__logo:active > .photo-page .copyright__logo-image--tablet {
+    display: none;
+  }*/
+
+  .photo-page .copyright__social-list {
+    width: 180px;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+    min-height: 50px;
+    margin-top: 10px;
+  }
+
+  .photo-page .copyright__social-link {
+    position: relative;
+  }
+
+  .photo-page .copyright__social-link::before {
+    content: "";
+    position: absolute;
+
+    width: 52px;
+    height: 52px;
+  }
+
+  .photo-page .copyright__social-link--twitter::before {
+    background-image: url("../img/twitter.png");
+  }
+
+  .photo-page .copyright__social-link--facebook::before {
+    left: 62px;
+
+    background-image: url("../img/facebook.png");
+  }
+
+  .photo-page .copyright__social-link--youtube::before {
+    left: 125px;
+
+    background-image: url("../img/youtube.png");
+  }
+
+  .photo-page .copyright__social-link--twitter:hover::before,
+  .photo-page .copyright__social-link--twitter:focus::before {
+    background-image: url("../img/hovertablettwitter.png");
+  }
+
+  .photo-page .copyright__social-link--facebook:hover::before,
+  .photo-page .copyright__social-link--twitter:focus::before {
+    background-image: url("../img/hovertablettfacebook.png");
+  }
+
+  .photo-page .copyright__social-link--youtube:hover::before,
+  .photo-page .copyright__social-link--twitter:focus::before {
+    background-image: url("../img/hovertabletyoutube.png");
+  }
+
+  .photo-page .copyright__social-link--twitter:active::before {
+    background-image: url("../img/actvetablettwitter.png");
+  }
+
+  .photo-page .copyright__social-link--facebook:active::before {
+    background-image: url("../img/actvetabletfacebook.png");
+  }
+
+  .photo-page .copyright__social-link--youtube:active::before {
+    background-image: url("../img/actvetabletyoutube.png");
+  }
+
+  .photo-page .copyright__developed {
+    width: 145px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .photo-page .copyright__developed-link {
+    position: relative;
+  }
+
+  .photo-page .copyright__developed-link::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 100px;
+
+    width: 27px;
+    height: 34px;
+
+    background-image: url("../img/htmlacademy.svg.png");
+  }
+
+  .photo-page .copyright__developed-link:hover::before,
+  .photo-page .copyright__developed-link:focus::before {
+    background-image: url("../img/Vector\ Smart\ Object\ copy\ 7.png");
+  }
+
+  .photo-page .copyright__developed-link:active::before {
+    background-image: url("../img/Vector\ Smart\ Object\ copy\ 8.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    display: block;
+    min-height: 100px;
+    margin-top: 20px;
+  }
+
+  .copyright__logo-image--desktop {
+    display: none;
+  }
+
+  .copyright__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright__social-list {
+    width: 180px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .copyright__developed {
+    width: 145px;
+  }
+
+  .copyright__developed-link {
+    position: relative;
+  }
+
+  .copyright__developed-link::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 100px;
+
+    width: 27px;
+    height: 34px;
+
+    background-image: url("../img/htmlacademy.svg.png");
+  }
+
+  .copyright__social-link {
+    position: relative;
+  }
+
+  .copyright__social-link::before {
+    content: "";
+    position: absolute;
+
+    width: 52px;
+    height: 52px;
+  }
+
+  .copyright__social-link--twitter::before {
+    background-image: url("../img/twitter.png");
+  }
+
+  .copyright__social-link--facebook::before {
+    left: 62px;
+
+    background-image: url("../img/facebook.png");
+  }
+
+  .copyright__social-link--youtube::before {
+    left: 125px;
+
+    background-image: url("../img/youtube.png");
+  }
+
+  .copyright__logo {
+    width: 147px;
+    height: 40px; 
+  }
+
+  .copyright__logo:hover,
+  .copyright__logo:focus {
+    background-image: url("../img/logotabletred.png");
+    background-repeat: no-repeat;
+    background-position: 1px 0;
+  }
+
+  .copyright__logo:active {
+    background-image: url("../img/bottomlogotablet.png");
+    background-repeat: no-repeat;
+    background-position: 1px 0;
+  }
+
+  .copyright__logo:hover > .copyright__logo-image--tablet,
+  .copyright__logo:focus > .copyright__logo-image--tablet,
+  .copyright__logo:active > .copyright__logo-image--tablet {
+    display: none;
+  }
+
+  .copyright__social-link--twitter:hover::before,
+  .copyright__social-link--twitter:focus::before {
+    background-image: url("../img/hovertablettwitter.png");
+  }
+
+  .copyright__social-link--facebook:hover::before,
+  .copyright__social-link--twitter:focus::before {
+    background-image: url("../img/hovertablettfacebook.png");
+  }
+
+  .copyright__social-link--youtube:hover::before,
+  .copyright__social-link--twitter:focus::before {
+    background-image: url("../img/hovertabletyoutube.png");
+  }
+
+  .copyright__social-link--twitter:active::before {
+    background-image: url("../img/actvetablettwitter.png");
+  }
+
+  .copyright__social-link--facebook:active::before {
+    background-image: url("../img/actvetabletfacebook.png");
+  }
+
+  .copyright__social-link--youtube:active::before {
+    background-image: url("../img/actvetabletyoutube.png");
+  }
+
+  .copyright__developed-link:hover::before,
+  .copyright__developed-link:focus::before {
+    background-image: url("../img/Vector\ Smart\ Object\ copy\ 7.png");
+  }
+
+  .copyright__developed-link:active::before {
+    background-image: url("../img/Vector\ Smart\ Object\ copy\ 8.png");
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .copyright__logo-image--tablet {
+    display: none;
+  }
+
+  .copyright__logo-image--desktop {
+    display: block;
+  }
+
+  .copyright__logo:hover,
+  .copyright__logo:focus {
+    background-image: none;
+  }
+
+  .copyright__logo:active {
+    background-image: none;
+  }
+
+  .copyright__developed-text {
+    margin-top: 10px;
+
+    font-size: 18px;
+  }
+
+  .copyright__developed-link::before {
+    left: 120px;
+  }
+
+  .copyright__wrapper {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}

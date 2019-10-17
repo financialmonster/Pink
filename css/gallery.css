@@ -1,0 +1,147 @@
+.gallery__panorama-item {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+
+}
+
+.gallery__item-time {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.gallery__item-content {
+  line-height: 24px;
+}
+
+.gallery__item-likes {
+  position: relative;
+  font-size: 12px;
+
+  width: 120px;
+  margin-left: 30px;
+
+  color: #d22856;
+}
+
+.gallery__item-likes::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -30px;
+
+  display: block;
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-heart.svg.png");
+}
+
+.gallery__item {
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.gallery__item-description {
+  background-color: #f2f2f2;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 20px;
+  margin-top: -10px;
+  padding-top: 20px;
+}
+
+.gallery__item-description--panorama {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-page .gallery__panorama-item {
+    width: 660px;
+    margin-right: 0px;
+  }
+
+  .gallery__item-description--panorama {
+    padding-left: 30px;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .gallery__item-description--common {
+    min-height: 150px;
+    padding-left: 25px;
+  }
+
+  .gallery__item-likes--panorama {
+      position: absolute;
+      top: 10px;
+      right: 40px;
+  }
+
+  .gallery__item-likes--panorama::before {
+      left: 120px;
+      top: 8px;
+  }
+
+  .gallery__item-content {
+    margin-top: 0px;
+  }
+
+  .gallery__item {
+    width: 300px;
+    margin-right: 0;
+  } 
+
+  .gallery__item:not(.gallery__panorama-item):nth-child(2n + 1) {
+    margin-right: 20px;
+  }
+
+  .gallery__item-content {
+    min-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .gallery__item-likes{
+    margin-left: 0px;
+  }
+
+  .gallery__item-likes--common::before {
+      left: 230px;
+  }
+}
+
+@media (min-width: 1200px) {
+    .photo-page .gallery__panorama-item {
+        width: 1200px;
+    }
+
+    .gallery__item-content--panorama {
+      margin-bottom: 0px;
+    }
+
+    .gallery__item-description--panorama {
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+
+    .gallery__item {
+      margin-right: 20px;
+      margin-bottom: 55px;
+    }
+
+    .gallery__item:not(.gallery__panorama-item):nth-child(3n) {
+      margin-right: 0px;
+    }
+}

@@ -1,0 +1,205 @@
+.features {
+  min-height: 960px;
+
+  background-image: url("../img/iphonescreen3.png"), url("../img/Shape\ 2\ copy.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 80px 685px, 0 160px;
+}
+
+.features__question,
+.features__exclamation {
+  box-sizing: border-box;
+  width: 275px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.features__question {
+  margin-bottom: 30px;
+}
+
+.features__item-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.features__list {
+  margin-top: 115px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  line-height: 24px;
+  text-align: center;
+}
+
+.features__effect {
+  display: none;
+}
+
+.features__effect-title {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .features__question,
+  .features__exclamation {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .features__question {
+    box-sizing: border-box;
+    width: 620px;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .features__exclamation {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    padding: 0;
+  }
+
+  .features {
+    min-height: 1140px;
+
+    background-image: url("../img/timer.png") ,url("../img/Layer\ 159.png"), url("../img/Iphone.png"), url("../img/Shape\ 2.png"), url("../img/Iphone\ screen\ #3.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 20px 790px, 0 735px, 20px 255px, 0 230px, 0 100px;
+  }
+
+  .features__list {
+    width: 310px;
+    margin-bottom: 150px;
+    margin-left: 300px;
+  }
+
+  .features__item-title,
+  .features__item-description {
+    text-align: left;
+  }
+
+  .features__effect {
+    display: block;
+    width: 305px;
+    margin-left: 300px;
+  }
+
+  .features__effect-title {
+    width: 185px;
+    margin-bottom: -10px;
+
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .features__effect-link {
+    color: #d22856;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features {
+    min-height: 1300px;
+
+    background-image: url("../img/Layer\ 156.png"),
+    url("../img/Layer\ 156\ copy.png"),
+    url("../img/Layer\ 156\ copy\ 2.png"),
+    url("../img/Layer\ 157.png"),
+    url("../img/Layer\ 157\ copy.png"),
+    url("../img/Layer\ 157\ copy\ 2.png"),
+    url("../img/timerdesktop.png"),
+    url("../img/desktopiphone1.png"),
+    url("../img/desktopiphone2.png"),
+    url("../img/desktopiphone3.png"),
+    url("../img/Shape\ 2desktop.png"),
+    url("../img/greybackgrounddesktop.png");
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+    background-position: 130px 555px,
+    450px 555px,
+    770px 555px,
+    130px 565px,
+    450px 565px,
+    770px 565px,
+    130px 885px,
+    180px 260px,
+    500px 260px,
+    820px 260px,
+    0 255px,
+    0 870px;
+  }
+
+  .features__question,
+  .features__exclamation {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .features__question {
+    width: 740px;
+    margin-bottom: 0;
+    margin-left: 100px;
+  }
+
+  .features__exclamation {
+    width: 425px;
+    margin-bottom: 390px;
+  }
+
+  .features__item-title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .features__item-description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .features__list {
+    display: flex;
+    justify-content: space-around;
+    width: 940px;
+    margin-left: 0;
+  }
+
+  .features__item {
+    width: 245px;
+  }
+
+  .features__effect {
+    width: 525px;
+    margin-left: 370px;
+  }
+
+  .features__effect-title {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .features__effect-content {
+    padding-left: 0;
+
+    white-space: pre-line;
+  }
+}

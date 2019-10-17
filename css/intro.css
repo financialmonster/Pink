@@ -1,0 +1,139 @@
+.intro {
+  min-height: 270px;
+  margin-top: 420px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+
+  color: white;
+
+  background-color: #1d2631;
+}
+
+.intro__button {
+  display: block;
+  box-sizing: border-box;
+  width: 275px;
+  height: 55px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+  border: 3px solid white;
+  border-radius: 25px;
+}
+
+.intro__button:hover,
+.intro__button:focus {
+  color: #d22856;
+
+  background-color: white;
+}
+
+.intro__button:active {
+  color: #f1becc;
+}
+
+.intro__access {
+  font-weight: 300;
+  text-align: center;;
+}
+
+.intro__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.intro__link::before {
+  content: "";
+
+  display: block;
+  width: 47px;
+  height: 56px;
+}
+
+.intro__link--apple::before {
+  background-image: url("../img/apple-logo.svg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.intro__link--android::before {
+  background-image: url("../img/android-logo.svg.png");
+  background-repeat: no-repeat;
+  background-position: 4px 9px;
+}
+
+.intro__link--microsoft::before {
+  background-image: url("../img/microsoft-logo.svg.png");
+  background-repeat: no-repeat;
+  background-position: 3px 15px;
+}
+
+.intro__title {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .intro__title {
+    display: block;
+
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .intro {
+    width: 300px;
+    margin-top: 0;
+    margin-left: 20px;
+
+    background-color: transparent;
+  }
+
+  .intro .intro__wrapper {
+    width: 300px;
+  }
+
+  .intro__access {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro__title {
+    padding-top: 10px;
+    padding-left: 15px;
+
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .intro__button {
+    width: 300px;
+
+    font-size: 21px;
+  }
+
+  .intro .intro__wrapper {
+    margin-left: 110px;
+  }
+
+  .intro__list {
+    width: 215px;
+    margin: 0 auto;
+  }
+}

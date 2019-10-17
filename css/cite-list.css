@@ -1,0 +1,128 @@
+.cite-list {
+  position: fixed;
+  top: -14px;
+  left: -40px;
+
+  display: none;
+
+  list-style: none;
+}
+
+.cite-list__link {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  height: 65px;
+  margin: 0;
+  padding-top: 15px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid black;
+}
+
+.cite-list__item--tablet {
+  display: none;
+}
+
+.cite-list__link--logo {
+  padding-left: 20px;
+  padding-top: 18px;
+  text-align: left;
+}
+
+.cite-list__link--passive:hover,
+.cite-list__link--passive:focus {
+  color: #d22856;
+}
+
+.cite-list__link--passive:active {
+  color: #5f3750;
+}
+
+@media (min-width: 768px) {
+  .cite-list__link {
+    width: 660px;
+  }
+
+  .cite-list__item--mobile {
+    display: none;
+  }
+
+  .cite-list__item--tablet {
+    display: block;
+    height: 110px;
+  }
+
+  .cite-list__link--logo {
+    height: 110px;
+    padding-top: 35px;
+    margin-bottom: 0px;
+    padding-left: 22px;
+  }
+
+  .cite-list__link--logo:hover,
+  .cite-list__link--logo:focus,
+  .cite-list__link--logo:active {
+    background-image: none;
+  }
+
+  .cite-list__link--logo:hover > .page-header__logo-image--tablet,
+  .cite-list__link--logo:focus > .page-header__logo-image--tablet,
+  .cite-list__link--logo:active > .page-header__logo-image--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cite-list {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+
+    list-style: none;
+
+    position: static;
+  }
+
+  .cite-list__item--normal {
+    display: block;
+  }
+
+  .cite-list__link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+
+    width: 150px;
+    background-color: transparent;
+    text-transform: none;
+    font-weight: 400;
+    vertical-align: middle;
+    border: none;
+  }
+
+  .cite-list__link--active {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+
+    border-bottom: 2px solid white;
+  }
+
+  .cite-list__item--tablet {
+    display: none;
+  }
+}

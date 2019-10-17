@@ -1,0 +1,16 @@
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: 275px;
+    height: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 25px;
+}

@@ -1,0 +1,36 @@
+/*@font-face { 
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+  url('../fonts/OpenSans-Light.woff2') format('woff2'),
+  url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+body {
+  position: relative;
+
+  width: 320px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

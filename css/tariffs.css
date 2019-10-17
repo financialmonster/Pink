@@ -1,0 +1,255 @@
+.tariffs {
+  min-height: 390px;
+  padding-top: 90px;
+  overflow: hidden;
+
+  background-image: url("../img/Shape\ 2.png");
+  background-position: 0 -40px;
+}
+
+.tariffs__table {
+  display: table;
+  width: 825px;
+
+  border-collapse: collapse;
+
+  transform: translateX(-275px);
+}
+
+.tariffs__table-head {
+  display: table-header-group;
+}
+
+.tariffs__table-body {
+  display: table-row-group;
+}
+
+.tariffs__table-row {
+  display: table-row;
+}
+
+.tariffs__table-cell,
+.tariffs__table-headcell {
+  display: table-cell;
+}
+
+.tariffs__table-cell {
+  position: relative;
+
+  height: 55px;
+  padding-left: 25px;
+
+  vertical-align: middle;
+
+  border: 2px solid #e5e5e5;
+}
+
+.tariffs__table-cell--green::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 225px;
+
+  display: block;
+  width: 25px;
+  height: 15px;
+
+  border-bottom: 4px solid #3dc644;
+  border-left: 4px solid #3dc644;
+  transform: rotate(-45deg);
+}
+
+.tariffs__table-cell--red::before,
+.tariffs__table-cell--red::after {
+  content: "";
+  position: absolute;
+
+  display: block;
+  width: 35px;
+  height: 4px;
+
+  background-color: #f25b26;
+}
+
+.tariffs__table-cell--red::before {
+  top: 25px;
+  left: 225px;
+
+  transform: rotate(-45deg);
+}
+
+.tariffs__table-cell--red::after {
+  top: 25px;
+  left: 225px;
+
+  transform: rotate(45deg);
+}
+
+.tariffs__table-headcell {
+  display: table-cell;
+  box-sizing: border-box;
+  height: 50px;
+  padding-top: 20px;
+
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+
+  background-color: #283645;
+}
+
+.tariffs__table-headcell--hit {
+  background-image: url("../img/group1.png");
+  background-repeat: no-repeat;
+}
+
+.tariffs__table-price {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.tariffs__round-toggles {
+  margin-top: 30px;
+  padding-right: 100px;
+  padding-left: 95px;
+}
+
+.tariffs__table-row--normal {
+  display: none;
+}
+
+.tariffs__table-headcell--normal {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .tariffs {
+    min-height: 305px;
+    padding-top: 150px;
+
+    background-image: url("../img/Shape\ 2\ copy-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .tariffs__table-row--mobile {
+    display: none;
+  }
+
+  .tariffs__table-row--normal {
+    display: table-row;
+  }
+
+  .tariffs__table {
+    box-sizing: border-box;
+    width: 620px;
+
+    transform: translateX(0px);
+  }
+
+  .tariffs__table-cell {
+    width: 155px;
+    height: 50px;
+
+    background-color: white;
+  }
+
+  .tariffs__table-headcell {
+    box-sizing: border-box;
+    width: 155px;
+    height: 75px;
+    padding-top: 10px;
+  }
+
+  .tariffs__table-headcell--normal {
+    display: table-cell;
+    width: 155px;
+
+    background-color: transparent;
+    border: none;
+  }
+
+  .tariffs__table-cell--green::before {
+    left: 60px;
+
+    width: 30px;
+  }
+
+  .tariffs__table-cell--red::before {
+    top: 25px;
+    left: 55px;
+  }
+
+  .tariffs__table-cell--red::after {
+    top: 25px;
+    left: 55px;
+  }
+
+  .tariffs__table-price {
+    margin: 0;
+
+    font-size: 18px;
+  }
+
+  .tariffs__table-headcell--hit {
+    background-image: url("../img/group2.png");
+  }
+
+  .tariffs__round-toggles {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tariffs {
+    min-height: 520px;
+    margin-top: -40px;
+    padding-top: 0;
+
+    background-image: url("../img/Shape\ 2\ copy-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .tariffs__table {
+    width: 940px;
+  }
+
+  .tariffs__table-cell {
+    width: 235px;
+    height: 60px;
+
+    font-size: 18px;
+  }
+
+  .tariffs__table-headcell {
+    width: 235px;
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .tariffs__table-cell--green::before {
+    left: 95px;
+
+    width: 30px;
+  }
+
+  .tariffs__table-cell--red::before {
+    top: 25px;
+    left: 95px;
+  }
+
+  .tariffs__table-cell--red::after {
+    top: 25px;
+    left: 95px;
+  }
+
+  .tariffs__table-headcell--hit {
+    background-image: url("../img/hit-desktop.png");
+  }
+
+  .tariffs__wrapper {
+    margin-top: 160px;
+  }
+}
