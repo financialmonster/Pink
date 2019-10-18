@@ -13,27 +13,15 @@
             <nav class="main-nav">
                 <div class="main-nav__wrapper wrapper">
                     <a class="page-header__logo" href="#" title="Логотип Pink">
-                        <img 
-                            class="page-header__logo-image page-header__logo-image--desktop" 
-                            src="img/logotype-white-desktop.svg.png" 
-                            alt="Логотип Pink" 
-                            width="147"
-                            height="40"
-                        >
-                        <img 
-                            class="page-header__logo-image page-header__logo-image--tablet" 
-                            src="img/logotype-white-tablet.svg.png" 
-                            alt="Логотип Pink" 
-                            width="147"
-                            height="40"
-                        >
-                        <img 
-                            class="page-header__logo-image page-header__logo-image--mobile" 
-                            src="img/logotype-white-mobile.svg.png" 
-                            alt="Логотип Pink" 
-                            width="75"
-                            height="22"
-                        >
+                        <picture class="page-header__logo-picture">
+                            <source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg.png">
+                            <source media="(min-width:768px)" srcset="img/logotype-white-tablet.svg.png">
+                            <img 
+                                class="page-header__logo-image"  
+                                src="img/logotype-white-mobile.svg.png" 
+                                alt="Логотип Pink" 
+                            >
+                        </picture>
                     </a>
                     <button class="main-nav__toggle" type="button"></button>
                     <ul class="main-nav__list cite-list">
@@ -76,6 +64,7 @@
                 </div>
             </nav>
             <section class="intro">
+                <h2 class="visually-hidden">Скачать приложение</h2>
                 <div class="intro__wrapper wrapper">
                     <div class="intro__content">
                         <p class="intro__title">

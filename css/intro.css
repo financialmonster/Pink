@@ -86,6 +86,10 @@
 }
 
 @media (min-width: 768px) {
+  .intro__content {
+    padding-top: 70px;
+  }
+
   .intro__title {
     display: block;
 

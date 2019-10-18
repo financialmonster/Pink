@@ -94,12 +94,12 @@
   width: 100%;
   min-height: 200px;
   padding-left: 20px;
+  resize: none;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
 
   border: 2px solid #e5e5e5;
-}
-
-.form__textarea-field::placeholder {
-  font-size: 18px;
 }
 
 .form__achievements,
