@@ -1,9 +1,10 @@
 .modal-failure {
-    position: absolute;
+    position: fixed;
     width: 320px;
     min-height: 290px;
-    left: 0px;
-    top: 1160px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     padding-top: 30px;
     box-sizing: border-box;
@@ -16,8 +17,8 @@
     .modal-failure {
         width: 460px;
         min-height: 360px;
-        left: 100px;
-        top: 900px;
+        left: 50%;
+        top: 50%;
     }
 }
 
@@ -25,8 +26,8 @@
     .modal-failure {
         width: 780px;
         min-height: 380px;
-        left: 210px;
-        top: 810px;
+        left: 50%;
+        top: 50%;
     }
 
     .modal__failure-wrapper {

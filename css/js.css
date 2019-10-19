@@ -1,7 +1,26 @@
-.show-js {
+.disabled-js {
+  background-color: #e5e5e5;
+  color: white;
+}
+
+.show-form-js {
   display: block;
 }
 
-.margintop-js {
-  margin-top: 255px;
+@media(max-width: 1199px) {
+  .hide-js {
+    display: none;
+  }
+
+  .show-js {
+    display: block;
+  }
+  
+  .margintopup-js {
+    margin-top: 0px;
+  }
+
+  .margintopdown-js {
+    margin-top: 255px;
+  }
 }

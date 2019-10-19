@@ -6,6 +6,7 @@
   font-weight: bold;
   font-size: 18px;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .contacts__item-content {
@@ -13,6 +14,8 @@
   font-size: 24px;
   text-align: center;
   color: #d22856;
+  margin-top: 0px;
+  width: 240px;
 }
 
 .contacts__list {
@@ -55,9 +58,14 @@
   .contacts__list {
     flex-wrap: nowrap;
     margin-top: 40px;
+    width: 940px;
   }
 
   .contacts__list .contacts__item:nth-child(2) {
-    order: 0;
+    order: 1;
+  }
+
+  .contacts__item-title {
+    margin-bottom: 20px;
   }
 }

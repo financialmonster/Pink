@@ -2,8 +2,9 @@
   position: fixed;
   top: -14px;
   left: -40px;
+  z-index: 4;
 
-  display: none;
+  
 
   list-style: none;
 }

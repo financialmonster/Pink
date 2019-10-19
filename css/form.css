@@ -320,7 +320,7 @@
 
 .form__button:hover,
 .form__button:focus {
-    background-color: #1c9b5e;
+  background-color: #1c9b5e;
 }
 
 .form__button:active{

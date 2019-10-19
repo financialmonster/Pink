@@ -7,6 +7,7 @@
   background-image: url("../img/Layer\ 155.png"), url("../img/iphone-5-in-hand-png.png"), url("../img/back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 104px 207px, 0 175px, 0 0;
+  margin-top: 255px;
 }
 
 .page-header__logo-image--desktop {

@@ -1,9 +1,10 @@
 .modal-success {
-    position: absolute;
+    position: fixed;
     width: 320px;
     min-height: 380px;
-    left: 0px;
-    top: 1630px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     padding-top: 30px;
     box-sizing: border-box;
@@ -24,8 +25,8 @@
     .modal-success {
         width: 460px;
         min-height: 430px;
-        left: 100px;
-        top: 1360px;
+        left: 50%;
+        top: 50%;
     }
 
     .modal__success-wrapper {
@@ -37,8 +38,8 @@
     .modal-success {
         width: 780px;
         min-height: 380px;
-        left: 210px;
-        top: 1245px;
+        left: 50%;
+        top: 50%;
     }
 
     .modal__success-wrapper {

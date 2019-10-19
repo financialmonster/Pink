@@ -42,9 +42,9 @@
   position: fixed;
   top: 25px;
   left: 285px;
-  z-index: 2;
+  z-index: 5;
 
-  display: none;
+  
   width: 25px;
   height: 25px;
 
