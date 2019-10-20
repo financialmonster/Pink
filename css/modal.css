@@ -1,73 +1,79 @@
 .modal__title {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .modal__content {
-    width: 280px;
-    margin: 0 auto;
-    line-height: 24px;
-    text-align: center;
+  width: 280px;
+  margin: 0 auto;
+
+  line-height: 24px;
+  text-align: center;
 }
 
 .modal__content--success {
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
 .modal__button {
-    margin: 0 auto;
-    box-sizing: border-box;
-    width: 280px;
-    margin-top: 45px;
-    background-color: #2aab6d;
-    border-radius: 0px;
-    height: 63px;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  margin: 0 auto;
+  margin-top: 45px;
+  border-radius: 0;
+
+  background-color: #2aab6d;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
 }
 
 .modal__button:hover,
 .modal__button:focus {
-    background-color: #1c9b5e;
+  background-color: #1c9b5e;
 }
 
-.modal__button:active{
-    color: #61b98f;
+.modal__button:active {
+  color: #61b98f;
 }
 
 @media (min-width: 768px) {
-    .modal__title {
-       font-size: 30px;
-       line-height: 40px; 
-       width: 220px;
-       margin: 0 auto;
-       margin-bottom: 25px;
-    }
+  .modal__title {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 25px;
 
-    .modal__content {
-        width: 320px;
-        font-size: 18px;
-    }
+    font-size: 30px;
+    line-height: 40px;
+  }
 
-    .modal__content--success {
-        white-space: normal;
-    }
+  .modal__content {
+    width: 320px;
+
+    font-size: 18px;
+  }
+
+  .modal__content--success {
+    white-space: normal;
+  }
 }
 
 @media (min-width: 1200px) {
-    .modal__title { 
-       width: 400px;
-    }
+  .modal__title {
+    width: 400px;
+  }
 
-    .modal__content {
-        width: 385px;
-    }
+  .modal__content {
+    width: 385px;
+  }
 
-    .modal__button--success {
-        width: 460px;
-    }
+  .modal__button--success {
+    width: 460px;
+  }
 }

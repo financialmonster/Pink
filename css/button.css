@@ -1,16 +1,16 @@
 .button {
-    display: block;
-    box-sizing: border-box;
-    width: 275px;
-    height: 55px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
+  display: block;
 
-    border: none;
-    border-radius: 25px;
+  box-sizing: border-box;
+  width: 275px;
+  height: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
 }

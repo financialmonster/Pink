@@ -12,46 +12,54 @@
 
 .map__triangle {
   position: absolute;
+  left: 0;
+
   width: 100%;
-  left: 0px;
   min-height: 123px;
 }
 
 .map__triangle--mobile {
+  top: 330px;
+
   background-image: url("../img/triangle-white-footer.svg.png");
   background-repeat: no-repeat;
-  top: 330px;
 }
 
 .map__triangle::before {
   content: "";
+
   position: absolute;
-  width: 35px;
-  height: 35px;
   top: 180px;
   left: 143px;
-  background-color: white;
+
+  width: 35px;
+  height: 35px;
   border: 1px solid transparent;
   border-radius: 50%;
+
+  background-color: white;
 }
 
 .map__triangle::after {
   content: "";
+
   position: absolute;
-  width: 15px;
-  height: 15px;
   top: 190px;
   left: 153px;
-  background-color: #d22856;
+
+  width: 15px;
+  height: 15px;
   border: 1px solid transparent;
   border-radius: 50%;
-}
 
+  background-color: #d22856;
+}
 
 @media (min-width: 768px) {
   .map__triangle--tablet {
-    background-image: url("../img/triangle-white-tablet.svg.png");
     top: 380px;
+
+    background-image: url("../img/triangle-white-tablet.svg.png");
   }
 
   .map__triangle::before {
@@ -70,6 +78,7 @@
 
   .map--tablet {
     display: block;
+
     margin-top: 20px;
   }
 }
@@ -84,8 +93,9 @@
   }
 
   .map__triangle--desktop {
-    background-image: url("../img/triangle-white-desktop.svg.png");
     top: 360px;
+
+    background-image: url("../img/triangle-white-desktop.svg.png");
   }
 
   .map__triangle::before {
@@ -93,7 +103,6 @@
     left: 583px;
   }
 
-  
   .map__triangle::after {
     top: 320px;
     left: 593px;

@@ -1,7 +1,8 @@
 .tariffs {
+  overflow: hidden;
+
   min-height: 390px;
   padding-top: 90px;
-  overflow: hidden;
 
   background-image: url("../img/Shape\ 2.png");
   background-position: 0 -40px;
@@ -9,11 +10,11 @@
 
 .tariffs__table {
   display: table;
+  transform: translateX(-275px);
+
   width: 825px;
 
   border-collapse: collapse;
-
-  transform: translateX(-275px);
 }
 
 .tariffs__table-head {
@@ -38,33 +39,35 @@
 
   height: 55px;
   padding-left: 25px;
+  border: 2px solid #e5e5e5;
 
   vertical-align: middle;
-
-  border: 2px solid #e5e5e5;
 }
 
 .tariffs__table-cell--green::before {
   content: "";
+
   position: absolute;
   top: 15px;
   left: 225px;
 
   display: block;
+  transform: rotate(-45deg);
+
   width: 25px;
   height: 15px;
-
   border-bottom: 4px solid #3dc644;
   border-left: 4px solid #3dc644;
-  transform: rotate(-45deg);
 }
 
 .tariffs__table-cell--red::before,
 .tariffs__table-cell--red::after {
   content: "";
+
   position: absolute;
 
   display: block;
+
   width: 35px;
   height: 4px;
 
@@ -87,16 +90,17 @@
 
 .tariffs__table-headcell {
   display: table-cell;
+
   box-sizing: border-box;
   height: 50px;
   padding-top: 20px;
+
+  background-color: #283645;
 
   font-weight: bold;
   font-size: 18px;
   text-align: center;
   color: white;
-
-  background-color: #283645;
 }
 
 .tariffs__table-headcell--hit {
@@ -142,10 +146,10 @@
   }
 
   .tariffs__table {
+    transform: translateX(0px);
+
     box-sizing: border-box;
     width: 620px;
-
-    transform: translateX(0px);
   }
 
   .tariffs__table-cell {
@@ -164,10 +168,11 @@
 
   .tariffs__table-headcell--normal {
     display: table-cell;
+
     width: 155px;
+    border: none;
 
     background-color: transparent;
-    border: none;
   }
 
   .tariffs__table-cell--green::before {

@@ -7,11 +7,12 @@
 .form__contacts,
 .form__app,
 .form__textarea {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
 
+  display: flex;
+
+  box-sizing: border-box;
   border-color: transparent;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .form__achievements-legend--mobile,
-.form__app-legend--mobile{
+.form__app-legend--mobile {
   line-height: 18px;
 }
 
@@ -41,7 +42,6 @@
   margin: 0;
   padding: 0;
   padding-left: 20px;
-
   border: 2px solid #e5e5e5;
 }
 
@@ -67,6 +67,7 @@
 .form__email:active,
 .form__textarea-field:active {
   border-color: #d22856;
+
   outline: none;
 }
 
@@ -93,13 +94,14 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 200px;
+  padding-top: 20px;
   padding-left: 20px;
-  resize: none;
+  border: 2px solid #e5e5e5;
+
   font-size: 18px;
   line-height: 30px;
-  padding-top: 20px;
 
-  border: 2px solid #e5e5e5;
+  resize: none;
 }
 
 .form__achievements,
@@ -133,23 +135,27 @@
   position: relative;
 
   display: block;
+
   margin-bottom: 55px;
   margin-left: 70px;
+
   font-size: 18px;
 }
 
 .form__achievements-label::before {
   content: "";
+
   position: absolute;
   top: -5px;
   left: -65px;
 
   display: block;
+
   width: 35px;
   height: 35px;
+  border: 2px solid #e5e5e5;
 
   background-color: white;
-  border: 2px solid #e5e5e5;
 }
 
 .form__achievements-label:hover::before,
@@ -172,12 +178,12 @@
   z-index: 2;
 
   display: none;
+  transform: rotate(-45deg);
+
   width: 20px;
   height: 10px;
-
   border-bottom: 3px solid #d22856;
   border-left: 3px solid #d22856;
-  transform: rotate(-45deg);
 }
 
 .form__checkbox:checked ~ .form__achievements-tick {
@@ -196,8 +202,9 @@
 .form__app-legend--mobile {
   width: 180px;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 40px;
+
+  text-align: center;
 }
 
 .form__radio {
@@ -205,37 +212,47 @@
 }
 
 .form__app-label {
-  margin-left: 80px;
-  margin-bottom: 45px;
   position: relative;
+
   display: block;
+
+  margin-bottom: 45px;
+  margin-left: 80px;
+
   font-size: 18px;
 }
 
 .form__app-label::before {
   content: "";
+
   position: absolute;
+  top: -3px;
+  left: -60px;
+
   width: 35px;
   height: 35px;
   border: 2px solid #e6e6e6;
   border-radius: 50%;
+
   background-color: white;
-  left: -60px;
-  top: -3px;
 }
 
 .form__app-label::after {
   content: "";
+
   position: absolute;
+  top: 9px;
+  left: -48px;
+  z-index: 2;
+
+  display: none;
+
   width: 13px;
   height: 13px;
   border: 1px solid transparent;
   border-radius: 50%;
+
   background-color: #d22856;
-  left: -48px;
-  top: 9px;
-  z-index: 2;
-  display: none;
 }
 
 .form__app-label:hover::before,
@@ -301,18 +318,21 @@
 }
 
 .form__textarea-legend {
-  text-align: center;
   margin-top: 25px;
+
+  text-align: center;
 }
 
 .form__button {
-  margin-left: 20px;
   box-sizing: border-box;
   width: 280px;
-  margin-top: 40px;
-  background-color: #2aab6d;
-  border-radius: 0px;
   height: 63px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-radius: 0;
+
+  background-color: #2aab6d;
+
   font-weight: bold;
   font-size: 18px;
   color: white;
@@ -323,8 +343,8 @@
   background-color: #1c9b5e;
 }
 
-.form__button:active{
-    color: #61b98f;
+.form__button:active {
+  color: #61b98f;
 }
 
 .form__asterisk--desktop {
@@ -339,9 +359,9 @@
 
 @media (min-width: 768px) {
   .form__button {
-    margin-left: 0px;
-    margin-top: 65px;
     width: 300px;
+    margin-top: 65px;
+    margin-left: 0;
   }
 
   .form__asterisk--normal {
@@ -350,15 +370,15 @@
   }
 
   .form__textarea {
+    box-sizing: border-box;
     min-height: 310px;
     margin-top: 50px;
-    box-sizing: border-box;
   }
 
   .form__textarea-legend {
-    padding-left: 25px;
-    padding-right: 25px;
     margin-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .form__textarea-field {
@@ -368,17 +388,19 @@
   }
 
   .form__app {
-    background-color: transparent;
     min-height: 310px;
+
+    background-color: transparent;
   }
 
   .form__app-legend--normal {
     display: block;
-    padding-left: 25px;
-    padding-right: 25px;
+
     margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
   }
-  
+
   .form__app-legend--mobile {
     display: none;
   }
@@ -395,10 +417,11 @@
 
   .form__contacts-legend {
     display: block;
+
     margin: 0 auto;
-    padding-left: 25px;
-    padding-right: 25px;
     margin-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .form__tel,
@@ -434,6 +457,7 @@
 
   .form__contacts-label--normal {
     display: block;
+
     margin-top: 10px;
     margin-bottom: 30px;
     margin-left: 75px;
@@ -445,6 +469,7 @@
 
   .form__achievements-legend--normal {
     display: block;
+
     margin: 0 auto;
     margin-bottom: 35px;
     padding-right: 25px;
@@ -468,8 +493,10 @@
 
   .form__wrapper,
   .form-page-main .wrapper {
-    display: flex;
     flex-wrap: wrap;
+
+    display: flex;
+
     width: 620px;
     margin: 0 auto;
   }
@@ -501,11 +528,13 @@
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
     order: -3;
+
     min-height: 330px;
   }
 
   .form__person-group {
     display: flex;
+
     width: 100%;
     margin-bottom: 30px;
   }
@@ -531,8 +560,9 @@
 
   .form__asterisk--desktop {
     display: block;
-    margin-left: 320px;
+
     margin-top: 80px;
+    margin-left: 320px;
   }
 
   .form__textarea {
@@ -546,17 +576,17 @@
 
   .form__app {
     width: 430px;
-    margin-left: 39px;
     min-height: 100px;
+    margin-left: 39px;
   }
 
   .form__app-label {
-    margin-left: 120px;
     margin-bottom: 50px;
+    margin-left: 120px;
   }
 
   .form__app-item:last-child > .form__app-label {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .form__contacts {
@@ -566,8 +596,9 @@
   }
 
   .form__contacts-container {
-    display: flex;
     justify-content: space-between;
+
+    display: flex;
   }
 
   .form__contacts-group {
@@ -579,8 +610,8 @@
   }
 
   .form__contacts-label--normal {
-    margin-left: 0px;
     margin-bottom: 10px;
+    margin-left: 0;
     padding-left: 25px;
     padding-left: 25px;
   }
@@ -599,8 +630,8 @@
   .form__person {
     width: 467px;
     min-height: 290px;
-    padding-bottom: 0px;
     margin-top: 15px;
+    padding-bottom: 0;
   }
 
   .form__person-group {
@@ -621,6 +652,7 @@
 
   .form__achievements-container {
     display: flex;
+
     width: 100%;
     margin-top: -20px;
   }
@@ -649,4 +681,3 @@
     left: -55px;
   }
 }
-

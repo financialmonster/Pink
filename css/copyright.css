@@ -6,6 +6,7 @@
   .photo-page .copyright,
   .form-page .copyright {
     display: block;
+
     min-height: 240px;
     padding-top: 40px;
   }
@@ -17,11 +18,12 @@
 
   .photo-page .copyright__logo,
   .form-page .copyright__logo {
+    display: block;
+
     width: 147px;
     height: 40px;
-    display: block;
-    margin-left: 65px;
     margin-bottom: 40px;
+    margin-left: 65px;
   }
 
   .photo-page .copyright__logo:hover,
@@ -49,12 +51,12 @@
   .photo-page .copyright__social-list,
   .form-page .copyright__social-list {
     width: 180px;
+    min-height: 50px;
     margin: 0 auto;
+    margin-top: 10px;
     padding: 0;
 
     list-style: none;
-    min-height: 50px;
-    margin-top: 10px;
   }
 
   .photo-page .copyright__social-link,
@@ -65,6 +67,7 @@
   .photo-page .copyright__social-link::before,
   .form-page .copyright__social-link::before {
     content: "";
+
     position: absolute;
 
     width: 52px;
@@ -107,7 +110,7 @@
   .photo-page .copyright__social-link--youtube:hover::before,
   .photo-page .copyright__social-link--twitter:focus::before,
   .form-page .copyright__social-link--youtube:hover::before,
-  .form-page .copyright__social-link--twitter:focus::before{
+  .form-page .copyright__social-link--twitter:focus::before {
     background-image: url("../img/hovertabletyoutube.png");
   }
 
@@ -141,6 +144,7 @@
   .photo-page .copyright__developed-link::before,
   .form-page .copyright__developed-link::before {
     content: "";
+
     position: absolute;
     top: -45px;
     left: 100px;
@@ -167,6 +171,7 @@
 @media (min-width: 768px) {
   .copyright {
     display: block;
+
     min-height: 100px;
     margin-top: 20px;
   }
@@ -176,8 +181,9 @@
   }
 
   .copyright__wrapper {
-    display: flex;
     justify-content: space-between;
+
+    display: flex;
   }
 
   .copyright__social-list {
@@ -198,6 +204,7 @@
 
   .copyright__developed-link::before {
     content: "";
+
     position: absolute;
     top: -45px;
     left: 100px;
@@ -214,6 +221,7 @@
 
   .copyright__social-link::before {
     content: "";
+
     position: absolute;
 
     width: 52px;
@@ -238,7 +246,7 @@
 
   .copyright__logo {
     width: 147px;
-    height: 40px; 
+    height: 40px;
   }
 
   .copyright__logo:hover,
@@ -296,7 +304,6 @@
     background-image: url("../img/Vector\ Smart\ Object\ copy\ 8.png");
   }
 }
-
 
 @media (min-width: 1200px) {
   .copyright__logo-image--tablet {

@@ -1,12 +1,15 @@
-/*@font-face { 
+@font-face {
   font-family: "Open Sans";
-  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-  url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-  url('../fonts/OpenSans-Light.woff2') format('woff2'),
-  url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+  src: url("opensans-bold-webfont.woff2") format("woff2"),
+    url("opensans-bold-webfont.woff") format("woff"),
+    url("opensans-light-webfont.woff2") format("woff2"),
+    url("opensans-light-webfont.woff") format("woff"),
+    url("opensans-regular-webfont.woff2") format("woff2"),
+    url("opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}*/
+  font-display: swap;
+}
 
 body {
   position: relative;
@@ -16,6 +19,15 @@ body {
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans", "Times New Roman", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  margin: -1px;
+  width: 1px;
 }
 
 img {
@@ -38,4 +50,3 @@ img {
     width: 1200px;
   }
 }
-

@@ -4,35 +4,35 @@
   margin-bottom: 40px;
   padding-top: 25px;
 
-  color: white;
-
   background-color: #1d2631;
+
+  color: white;
 }
 
 .intro__button {
   display: block;
+
   box-sizing: border-box;
   width: 275px;
   height: 55px;
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border: 3px solid white;
+  border-radius: 25px;
 
   font-weight: bold;
   font-size: 18px;
   text-align: center;
   color: white;
   text-decoration: none;
-
-  border: 3px solid white;
-  border-radius: 25px;
 }
 
 .intro__button:hover,
 .intro__button:focus {
-  color: #d22856;
-
   background-color: white;
+
+  color: #d22856;
 }
 
 .intro__button:active {
@@ -41,13 +41,15 @@
 
 .intro__access {
   font-weight: 300;
-  text-align: center;;
+  text-align: center;
 }
 
 .intro__list {
-  display: flex;
   justify-content: space-around;
   align-items: center;
+
+  display: flex;
+
   min-height: 100px;
   margin: 0;
   padding: 0;
@@ -59,6 +61,7 @@
   content: "";
 
   display: block;
+
   width: 47px;
   height: 56px;
 }

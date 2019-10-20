@@ -1,14 +1,16 @@
 .form-page .form-page-main__title {
-  min-height: 90px;
   box-sizing: border-box;
+  min-height: 90px;
+  margin: 0;
+  padding: 35px 45px 45px 35px;
+
   background-image: none;
-  color: white;
+
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  margin: 0;
-  padding: 35px 45px 45px 35px;
+  color: white;
 }
 
 .form-page-main__intro--normal {
@@ -16,28 +18,31 @@
 }
 
 .form-page-main__intro--mobile {
+  width: 280px;
   margin: 0 auto;
   margin-top: 40px;
-  width: 280px;
+
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .form-page .page-header {
     min-height: 440px;
+
     background-image: url("../img/back-tablet@1x.jpg");
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .form-page .form-page-main__title {
     width: 500px;
+    min-height: 180px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0;
+
     font-size: 50px;
     line-height: 60px;
-    margin: 0 auto;
-    padding: 0;
-    min-height: 180px;
-    margin-top: 70px;
   }
 
   .form-page-main__intro--mobile {
@@ -46,6 +51,7 @@
 
   .form-page-main__intro--normal {
     display: block;
+
     width: 500px;
     margin: 0 auto;
     margin-top: 90px;
@@ -65,11 +71,11 @@
 
 @media (min-width: 1200px) {
   .form-page .page-header {
+    min-height: 390px;
+
     background-image: url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
-
-    min-height: 390px;
   }
 
   .form-page .form-page-main__title {
@@ -84,6 +90,6 @@
 @media (min-resolution: 1.5dppx) and (min-width: 1200px) {
   .form-page .page-header {
     background-image: url("../img/back-desktop@2x.jpg");
-    background-size:  1200px auto;
+    background-size: 1200px auto;
   }
 }

@@ -34,9 +34,10 @@
 
   .reviews__item-author--normal {
     display: block;
-    margin-bottom: -10px;
-    font-weight: bold;
 
+    margin-bottom: -10px;
+
+    font-weight: bold;
     font-size: 20px;
   }
 
@@ -79,6 +80,7 @@
 
   .reviews__list::before {
     content: "";
+
     position: absolute;
     top: -130px;
     left: 300px;

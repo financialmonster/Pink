@@ -1,44 +1,47 @@
 .photo-page-main__intro {
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 50px;
-    padding: 0 20px;
-    text-align: center;
+  margin-top: 30px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+
+  text-align: center;
 }
 
 .photo-page-main__exclamation {
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 35px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+
+  text-align: center;
 }
 
-
 @media (min-width: 768px) {
-    .photo-page-main__intro {
-        font-size: 18px;
-        width: 440px;  
-        margin-left: 90px;
-        margin-top: 90px;
-        margin-bottom: 75px;
-    }
+  .photo-page-main__intro {
+    width: 440px;
+    margin-top: 90px;
+    margin-bottom: 75px;
+    margin-left: 90px;
 
-    .photo-page-main__exclamation {
-        font-size: 18px;
-        margin-top: 65px;
-        margin-bottom: 65px;
-    }
+    font-size: 18px;
+  }
+
+  .photo-page-main__exclamation {
+    margin-top: 65px;
+    margin-bottom: 65px;
+
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .photo-page-main__intro {
-        width: 570px;
-        margin-left: 290px;
-        margin-bottom: 85px;
-    } 
+  .photo-page-main__intro {
+    width: 570px;
+    margin-bottom: 85px;
+    margin-left: 290px;
+  }
 
-    .photo-page-main__exclamation {
-        margin-top: 5px;
-        margin-bottom: 60px;
-    }
+  .photo-page-main__exclamation {
+    margin-top: 5px;
+    margin-bottom: 60px;
+  }
 }

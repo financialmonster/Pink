@@ -1,7 +1,8 @@
 .features {
   min-height: 960px;
 
-  background-image: url("../img/iphonescreen3.png"), url("../img/Shape\ 2\ copy.png");
+  background-image: url("../img/iphonescreen3.png"),
+    url("../img/Shape\ 2\ copy.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 80px 685px, 0 160px;
 }
@@ -49,8 +50,9 @@
 
 @media (min-resolution: 1.5dppx) {
   .features {
-    background-image: url("../img/iphonescreen3@2x.png"), url("../img/Shape\ 2\ copy.png");
-    background-size: 157px auto , 320px auto;
+    background-image: url("../img/iphonescreen3@2x.png"),
+      url("../img/Shape\ 2\ copy.png");
+    background-size: 157px auto, 320px auto;
   }
 }
 
@@ -78,7 +80,8 @@
   .features {
     min-height: 1140px;
 
-    background-image: url("../img/timer.png") ,url("../img/Layer\ 159.png"), url("../img/iphonefeatures-tablet.png"), url("../img/Shape\ 2.png");
+    background-image: url("../img/timer.png"), url("../img/Layer\ 159.png"),
+      url("../img/iphonefeatures-tablet.png"), url("../img/Shape\ 2.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 20px 790px, 0 735px, 20px 255px, 0 230px, 0 100px;
   }
@@ -96,6 +99,7 @@
 
   .features__effect {
     display: block;
+
     width: 305px;
     margin-left: 300px;
   }
@@ -112,9 +116,10 @@
   }
 }
 
-@media (min-resolution: 1.5dppx) and (min-width: 768px){
+@media (min-resolution: 1.5dppx) and (min-width: 768px) {
   .features {
-    background-image: url("../img/timer.png") ,url("../img/Layer\ 159.png"), url("../img/iphonefeatures-tablet@2x.png"), url("../img/Shape\ 2.png");;
+    background-image: url("../img/timer.png"), url("../img/Layer\ 159.png"),
+      url("../img/iphonefeatures-tablet@2x.png"), url("../img/Shape\ 2.png");
     background-size: 238px auto, 660px auto, 268px auto, 660px auto;
   }
 }
@@ -123,37 +128,15 @@
   .features {
     min-height: 1300px;
 
-    background-image: 
-    url("../img/Layer\ 157.png"),
-    url("../img/Layer\ 157\ copy.png"),
-    url("../img/Layer\ 157\ copy\ 2.png"),
-    url("../img/timerdesktop.png"),
-    url("../img/desktopiphone1.png"),
-    url("../img/desktopiphone2.png"),
-    url("../img/desktopiphone3.png"),
-    url("../img/Shape\ 2desktop.png"),
-    url("../img/greybackgrounddesktop.png");
-
-    background-repeat: 
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
-    background-position: 
-    130px 565px,
-    450px 565px,
-    770px 565px,
-    130px 885px,
-    140px 260px,
-    460px 260px,
-    780px 260px,
-    0 255px,
-    0 870px;
+    background-image: url("../img/Layer\ 157.png"),
+      url("../img/Layer\ 157\ copy.png"), url("../img/Layer\ 157\ copy\ 2.png"),
+      url("../img/timerdesktop.png"), url("../img/desktopiphone1.png"),
+      url("../img/desktopiphone2.png"), url("../img/desktopiphone3.png"),
+      url("../img/Shape\ 2desktop.png"), url("../img/greybackgrounddesktop.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 130px 565px, 450px 565px, 770px 565px, 130px 885px,
+      140px 260px, 460px 260px, 780px 260px, 0 255px, 0 870px;
   }
 
   .features__question,
@@ -174,11 +157,12 @@
   }
 
   .features__item-title {
+    width: 225px;
+    margin: 0 auto;
+
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    width: 225px;
-    margin: 0 auto;
   }
 
   .features__item-description {
@@ -188,8 +172,10 @@
   }
 
   .features__list {
-    display: flex;
     justify-content: space-around;
+
+    display: flex;
+
     width: 940px;
     margin-left: 0;
   }
@@ -215,19 +201,14 @@
   }
 }
 
-@media (min-resolution: 1.5dppx) and (min-width: 1200px){
+@media (min-resolution: 1.5dppx) and (min-width: 1200px) {
   .features {
-    background-image: 
-    url("../img/Layer\ 157.png"),
-    url("../img/Layer\ 157\ copy.png"),
-    url("../img/Layer\ 157\ copy\ 2.png"),
-    url("../img/timerdesktop.png"),
-    url("../img/desktopiphone1@2x.png"),
-    url("../img/desktopiphone2@2x.png"),
-    url("../img/desktopiphone3@2x.png"),
-    url("../img/Shape\ 2desktop.png"),
-    url("../img/greybackgrounddesktop.png");
-
-    background-size: 300px auto, 300px auto, 300px auto, 298px auto, 294px auto, 294px auto, 294px auto, 1200px auto, 1200px auto;
+    background-image: url("../img/Layer\ 157.png"),
+      url("../img/Layer\ 157\ copy.png"), url("../img/Layer\ 157\ copy\ 2.png"),
+      url("../img/timerdesktop.png"), url("../img/desktopiphone1@2x.png"),
+      url("../img/desktopiphone2@2x.png"), url("../img/desktopiphone3@2x.png"),
+      url("../img/Shape\ 2desktop.png"), url("../img/greybackgrounddesktop.png");
+    background-size: 300px auto, 300px auto, 300px auto, 298px auto, 294px auto,
+      294px auto, 294px auto, 1200px auto, 1200px auto;
   }
 }
